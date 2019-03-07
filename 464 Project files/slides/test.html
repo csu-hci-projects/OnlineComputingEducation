@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basics of ScrewBall</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+  <section id="head">
+    <h1 class="header">Introduction to ScrewBall</h1>
+    <h3 class="slide">Slide: 3</h3>
+    <table class="tb">
+      <th>STUDENT #</th>
+      <tr>
+        <td>#</td>
+      </tr>
+    </table>
+    <button type="button" name="Back" class="lt-btn"><i class="arrow left"></i></button>
+    <div class="res-box">
+      <h3><strong>Must</strong><br /> Complete <br />to Advance</h3>
+    </div>
+  </section>
+
+  <section class="example">
+    <div class="ex-div">
+      <h4 class="example-h4">Instructions</h4>
+      <p class="ex-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis
+        est, porttitor vitae felis non, ultricies mollis lorem. Proin quis
+        aliquet nulla. Nullam et pharetra metus. Etiam id lacus et sapien
+        ullamcorper vehicula sit amet id eros.  </p>
+    </div>
+    <br />
+    <div class="input">
+      <form action="index.html" method="post">
+        <h4 class="input-h4">Complete the Instructions Below</h4>
+        <textarea class="input-try" name="example-try"></textarea>
+
+        <br><br><br><br>
+
+        <!-- Button container -->
+        <div class="download-button-container">
+            <!-- The real button -->
+            <button class="download-button">
+                <span class="button-text-real hidden">submit</span>
+                <!-- Extra elements to perform the animations -->
+                <span class="button-icon">
+                    <span class="button-linear-progress">
+                        <span class="button-linear-progress-bar"></span>
+                    </span>
+                    <svg class="button-icon-svg" viewBox="0 0 60 60">
+                        <path class="button-icon-path button-icon-path-square" d="M 20 40 l 0 -20 l 20 0 l 0 20 Z"></path>
+                        <path class="button-icon-path button-icon-path-line" d="M 40 20 l -20 20"></path>
+                    </svg>
+                </span>
+            </button>
+            <!-- Extra elements to perform the animations -->
+            <svg class="border-svg" width="240px" height="100px" viewBox="0 0 240 100">
+                <path class="border-path hidden" d="M 40 3.5 a 36.5 36.5 0 0 0 -36.5 36.5 a 36.5 36.5 0 0 0 36.5 36.5 C 70 76.5 90 76.5 120 76.5 S 170 76.5 200 76.5 a 36.5 36.5 0 0 0 36.5 -36.5 a 36.5 36.5 0 0 0 -36.5 -36.5 Z"></path>
+            </svg>
+            <span class="button-text button-text-download">Submit</span>
+            <span class="button-text button-text-done">Good Job!</span>
+            <div class="button-wave"></div>
+            <div class="button-progress-container">
+                <svg class="button-svg">
+                    <path class="button-circular-progress" d="M 50 50 m 0 -32.5 a 32.5 32.5 0 0 1 0 65 a 32.5 32.5 0 0 1 0 -65"></path>
+                </svg>
+                <span class="button-ball"></span>
+            </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+
+  <script src='js/anime.min.js'></script>
+  <script src='js/segment.min.js'></script>
+  <script src='js/demo.js'></script>
+</body>
+
+</html>

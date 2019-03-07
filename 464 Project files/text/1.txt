@@ -1,0 +1,20 @@
+**text file to build index slides**
+
+**Enter in slide number:** 1
+
+**Enter in slide type: (slide, example, test)** slide
+
+**Enter in title here:** Introduction to ScrewBall
+
+**Enter in paragraph:** Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Nulla turpis est, porttitor vitae felis non, ultricies mollis lorem. Proin quis
+  aliquet nulla. Nullam et pharetra metus. Etiam id lacus et sapien
+  ullamcorper vehicula sit amet id eros. Duis vulputate nisi sit amet ex
+  pellentesque, sit amet dapibus nisl porta. In sed est lorem. Aenean eu
+  erat congue, gravida neque ut, gravida leo. Donec a augue placerat,
+  congue orci a, sodales eros.
+
+
+**After completion, save new txt file as the slide number.txt.**
+**Example: slide 1 will be named 1.txt**
+**Do not name txt files anything other then the numbered slide**
