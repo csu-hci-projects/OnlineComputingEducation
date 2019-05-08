@@ -21,13 +21,13 @@
 
     .scene {
       width: 100vw;
-      height: 125vh;
+      height: 105vh;
       perspective: 100%;
     }
 
     .cube {
       width: 100vw;
-      height: 125vh;
+      height: 105vh;
       position: relative;
       transform-style: preserve-3d;
       transform: translateZ(-100px);
@@ -38,14 +38,15 @@
     .cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
     .cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
     .cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }
-    .cube.show-top    { transform: translateZ(-100px) rotatex( -90deg); }
+    .cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+    .cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
 
     .cube__face {
       position: absolute;
       width: 100vw;
-      height: 125vh;
+      height: 105vh;
       font-weight: bold;
-      color: blue;
+      color: #2787c5;
       text-align: center;
     }
 
@@ -54,12 +55,14 @@
     .cube__face--back   { background: black; }
     .cube__face--bottom { background: black; }
     .cube__face--top    { background: black; }
+    .cube__face--left   { background: black; }
 
     .cube__face--front  { transform: rotateY(  0deg) translateZ(50vw); }
     .cube__face--right  { transform: rotateY( 90deg) translateZ(50vw); }
     .cube__face--back   { transform: rotateY(180deg) translateZ(50vw); }
     .cube__face--bottom { transform: rotateX(-90deg) translateZ(50vw); }
     .cube__face--top    { transform: rotateX( 90deg) translateZ(50vw); }
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(50vw); }
 
     label {
       margin-right: 30px;
@@ -71,8 +74,8 @@
 
     .btn-hide{
       opacity: 0;
-      width: 3.5vw;
-      height: 3.5vw;
+      width: 2.5vw;
+      height: 2.5vw;
     }
 
     .dot{
@@ -91,25 +94,31 @@
 
     .dot-two{
       background-color: red;
-      top: 30%;
+      top: 25%;
       right: 2%;
     }
 
     .dot-three{
       background-color: red;
-      top: 45%;
+      top: 35%;
       right: 2%;
     }
 
     .dot-four{
       background-color: red;
-      top: 75%;
+      top: 55%;
       right: 2%;
     }
 
     .dot-five{
       background-color: red;
-      top: 60%;
+      top: 45%;
+      right: 2%;
+    }
+
+    .dot-six{
+      background-color: red;
+      top: 65%;
       right: 2%;
     }
 
@@ -134,7 +143,6 @@
       bottom: 0;
       left: 2%;
     }
-
 
     .kf{
       display: inline-block;
@@ -265,7 +273,7 @@
           <h3>CONTROL GROUP</h3>
           <a href="https://whitewolf8383.github.io/hci-class1/index.html" target="_blank">View the Control slides</a>
           <h3>Description</h3>
-          <p class="video-p">In the control group, participants tend a make shift class where they will learn 
+          <p class="video-p">In the control group, participants tend a make shift class where they will learn
             the basics of a new computing language, Screwball. The computing language is made in
             a manner that is counter intuitive of traditional computing languages, such as C/C++ and Java.
             This group will be given slides, embedded into  webpage for easy access. Once the class has been
@@ -275,14 +283,21 @@
           <h3>TEST GROUP</h3>
           <a href="http://www.cs.colostate.edu/~keith83/Class_2/index.html" target="_blank">View the Test slides</a>
           <h3>Description</h3>
-          <p class="video-p">In the test group, participants will follow in the same manner as the control group in which 
-            they will attend a class about the new computing language Screwball. They will also be given 
-            lecture slides embedded in a webpage, but will also recieve demonstration and testing slides 
+          <p class="video-p">In the test group, participants will follow in the same manner as the control group in which
+            they will attend a class about the new computing language Screwball. They will also be given
+            lecture slides embedded in a webpage, but will also recieve demonstration and testing slides
             for each teaching slide. This setup follows the study-test model which has been shown in studies
-            to improve the learning curve through reinforcment learning. The addition of demonstration 
+            to improve the learning curve through reinforcment learning. The addition of demonstration
             and testing slides also incorporates additional student participation and shortens the time period
             between learning and execution on new material.
           </p>
+          <h3 class="banner">CSU <br> CS464 Project <br> Website</h3>
+          <h6 class="footer-banner">Developed for Colorado State University CS464 Class Project</h6>
+        </div>
+
+        <div class="page-six cube__face cube__face--left">
+          <h1>Results</h1>
+          <img src="results_slide.png" alt="Image of results" style="width: 85%;">
           <h3 class="banner">CSU <br> CS464 Project <br> Website</h3>
           <h6 class="footer-banner">Developed for Colorado State University CS464 Class Project</h6>
         </div>
@@ -317,6 +332,12 @@
         <label>
           <button id="5" class="dot dot-five listen" type="button" name="button">
             <input class="btn-hide" type="radio" name="rotate-cube-side" value="top" />
+          </button>
+        </label>
+
+        <label>
+          <button id="6" class="dot dot-six listen" type="button" name="button">
+            <input class="btn-hide" type="radio" name="rotate-cube-side" value="left" />
           </button>
         </label>
       </p>
